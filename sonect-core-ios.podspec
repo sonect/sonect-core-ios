@@ -19,5 +19,9 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.source       = { :http => "https://github.com/sonect/sonect-core-ios/releases/download/#{spec.version}/SonectCoreSDK_Cocoapods.framework.zip" }
   spec.ios.vendored_frameworks = 'SonectCore.framework'
+  spec.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
