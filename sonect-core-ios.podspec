@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "sonect-core-ios"
-  spec.version      = "1.2.1"
+  spec.version      = "1.3.0"
   spec.summary      = "Sonect Core SDK"
   spec.description  = <<-DESC
   This is the Sonect Core SDK public podspec. 
@@ -18,10 +18,6 @@ Pod::Spec.new do |spec|
   spec.author             = { "sonect" => "marko.hlebar@sonect.ch" }
   spec.platform     = :ios, "9.0"
   spec.source       = { :http => "https://github.com/sonect/sonect-core-ios/releases/download/#{spec.version}/SonectCoreSDK_Cocoapods.framework.zip" }
-  spec.ios.vendored_frameworks = 'SonectCore.framework'
-  spec.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.ios.vendored_frameworks = 'SonectCore.xcframework'
 
 end
