@@ -1,10 +1,10 @@
 Pod::Spec.new do |spec|
 
-  spec.name         = "sonect-core-ios"
+  spec.name         = "sonect-core-sdk-ios"
   spec.version      = "1.5.4"
   spec.summary      = "Sonect Core SDK"
   spec.description  = <<-DESC
-  This is the Sonect Core SDK public podspec. 
+  This is the Sonect Core SDK public podspec.
                    DESC
 
   spec.homepage     = "https://github.com/sonect/sonect-core-ios"
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
                     Copyright (C) Sonect AG - All Rights Reserved
                     Unauthorized copying of this file, and the Sonect SDK via any medium is strictly prohibited
                     Proprietary and confidential
-                    Sonect, January 2020. 
+                    Sonect, January 2020.
                     LICENSE
                }
   spec.author             = { "sonect" => "marko.hlebar@sonect.ch" }
